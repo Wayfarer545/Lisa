@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>Lizzy's page</title>
+        <meta name="description" content="">
+
+        <!-- favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', path='/img/lizzy.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', path='/icon/favicon-16x16.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', path='/icon/favicon-32x32.png') }}">
+        <link rel="manifest" href="{{ url_for('static', path='/icon/site.webmanifest') }}">
+        <link rel="mask-icon" href="{{ url_for('static', path='/icon/safari-pinned-tab.svg') }}" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#603cba">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- The compiled CSS file -->
+        <link rel="stylesheet" href="{{ url_for('static', path='css/production.css') }}">
+
+        <!-- Web fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+
+        <!-- favicon.ico. Place these in the root directory. -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+    </head>
+
+    <body class="has-animations">
+
+
+    <!-- Header -->
+    <header class="pt2 pb1 align--center">
+        <div class="container">
+            <h1 title="Lizzy's page!"><img class="logo" src="{{ url_for('static', path='/img/logo.png') }}" alt="Lizzy's page!"></h1>
+        </div>
+    </header>
+
+    <!-- Body -->
+    <main>
+
+        <div class="container">
+
+            <!-- Info -->
+            <section class="grid-row grid-row--center">
+                <!-- Cabin -->
+                <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="{{ url_for('static', path='/img/lizzy.png') }}" alt="Lizzy">
+                        <div class="pattern pattern--left-down absolute z1"></div>
+                    </div>
+                </div>
+                <div class="grid-column span-half pt3 pb3 mobile-m order-2">
+                    <h3> Hi there! </h3>
+                    <p>I'm Lisa and you're on my webpage. Here are some cats and my photo, you know)</p>
+                </div>
+                <!-- Teepees -->
+                <div class="grid-column span-half pt3 pb3 mobile-m order-4">
+                    <h3>I'm getting older, yeah..</h3>
+                    <p>Ok now, i'm 17 and it's perfect!</p>
+                </div>
+                <div class="grid-column span-half pt3 pb3 mobile-m order-3 reveal-on-scroll is-revealing">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="{{ url_for('static', path='/img/parents.png') }}" alt="Parents">
+                        <div class="pattern pattern--right-middle absolute z1"></div>
+                    </div>
+                </div>
+                <!-- Fishing -->
+                <div class="grid-column span-half pt3 pb3 mobile-m order-5 reveal-on-scroll is-revealing">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="{{ url_for('static', path='/img/kamara.png') }}" alt="Kamara">
+                        <div class="pattern pattern--left-up absolute z1"></div>
+                    </div>
+                </div>
+                <div class="grid-column span-half pt3 pb3 mobile-m order-6">
+                    <h3>Kamara says:</h3>
+                    <p>Oh dear.. I love you so much! Especially while you're feeding me with sausages and
+                    other yummy things, you know. The angels sing from above while you're scratching behind my ears!
+                    </p>
+                    <p>*sounds of happy doggo*</p>
+                </div>
+                <!-- Archery -->
+                <div class="grid-column span-half pt3 pb3 mobile-m order-8">
+                    <h3>Some block..</h3>
+                    <p>Have no idea what i should place here</p>
+                </div>
+                <div class="grid-column span-half pt3 pb3 mobile-m order-7 reveal-on-scroll is-revealing">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="{{ url_for('static', path='/img/cat.png') }}" alt="Archery">
+                        <div class="pattern pattern--right-down absolute z1"></div>
+                    </div>
+                </div>
+                <!-- Canoeing -->
+                <div class="grid-column span-half pt3 pb3 mobile-m order-9 reveal-on-scroll is-revealing">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="{{ url_for('static', path='/img/cat2.png') }}" alt="Canoeing">
+                        <div class="pattern pattern--left-middle absolute z1"></div>
+                    </div>
+                </div>
+                <div class="grid-column span-half pt3 pb3 mobile-m order-10">
+                    <h3>Another block</h3>
+                    <p>The same situation</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Pricing -->
+        <section class="align--center pt2 pb3">
+            <p class="h2">Here are an epic text</p>
+            <p>готов, так сказать, к сотрудничеству.</p>
+        </section>
+
+        <!-- Contact -->
+        <section class="bg--secondary-color pt3 pb3">
+            <div class="container">
+                <div class="mb2 align--center">
+                    <h3 class="mb1">Send me</h3>
+                    <p>..anything secret :)</p>
+                </div>
+                <form action="" onsubmit="sendMessage(event)">
+                    <div class="grid-row">
+                        <div class="grid-column span-half mt1">
+                            <label class="label" for="name">Name</label>
+                            <input class="form-control" id="name">
+                        </div>
+                        <div class="grid-column span-half mt1">
+<!--                            <label class="label" for="dates">Дата</label>-->
+<!--                            <input class="form-control" id="dates">-->
+                        </div>
+                    </div>
+                    <label class="label mt1" for="message">Message</label>
+                    <textarea class="form-control" id="message"></textarea>
+                    <div class="align--right mt1">
+                        <button class="btn btn--outline">Send</button>
+                    </div>
+                    <script src="{{ url_for('static', path='js/chat.js') }}"></script>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt2 pb2">
+        <div class="container align--center">
+            <p>Design by <a href="https://wayfarer.letsgetsome.com" class="link">Wayfarer.</a></p>
+            <ul class="no-bullets list--inline mt1">
+                <li class="mr1"><a href="https://t.me/mstr_wayfarer" class="link"><img class="icon" src="{{ url_for('static', path='/img/telegram.svg') }}" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/mstr.wayfarer" class="link"><img class="icon" src="{{ url_for('static', path='/img/instagram.svg') }}" alt="Instagram"></a></li>
+            </ul>
+            <p>&copy; Wayfarer Production</p>
+        </div>
+    </footer>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!-- The compiled JavaScript file -->
+    <script src="{{ url_for('static', path='js/production.js') }}"></script>
+
+    </body>
+</html>
+

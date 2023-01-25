@@ -1,0 +1,13 @@
+jinja2
+uvicorn[standard]
+SQLalchemy
+alembic
+python_dotenv
+pydantic
+pydantic[email]
+psycopg2-binary==2.9.5
+requests
+redis
+fastapi
+sqlmodel
+passlib==1.7.4
